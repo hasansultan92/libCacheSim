@@ -338,7 +338,10 @@ void csv_setup_reader(reader_t *const reader) {
  */
 int csv_read_one_req(reader_t *const reader, request_t *const req) {
   csv_params_t *csv_params = reader->reader_params;
+  csv_params->delimiter = ' ';
+  reader->csv_delimiter = ' ';
   struct csv_parser *csv_parser = csv_params->csv_parser;
+  csv_params->csv_parser->delim_char = ' ';
   char **line_buf_ptr = &reader->line_buf;
   size_t *line_buf_size_ptr = &reader->line_buf_size;
 
