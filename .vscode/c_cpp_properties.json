@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/libCacheSim/include/**",
+                "/usr/local/include",
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/libCacheSim/include/**",
+                    "/usr/local/include",
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "compileCommands": "${workspaceFolder}/_build/compile_commands.json"
+        }
+    ],
+    "version": 4
+  }
+  
