@@ -172,8 +172,8 @@ bool check_delimiter(const reader_t *reader, char delimiter) {
 
   size_t _n = getline(&buf, &n, ifile);
 #define N_TEST 1024
-  for (int i = 0; i < N_TEST; i++) {
-    if (strchr(buf, delimiter) == NULL) {
+  for (int i = 0; i < N_TEST; i++) { // changed to fix delimiter at ' '
+    if (strchr(buf, ' ') == NULL) {
       is_delimiter_correct = false;
       break;
     }
