@@ -452,6 +452,7 @@ static int conv_cache_sizes(char *cache_size_str, struct arguments *args) {
   }
 
   if (args->n_cache_size == 1 && args->cache_sizes[0] == 0) {
+    args->reader->csv_delimiter = ' ';
     set_cache_size(args, args->reader);
   }
 
